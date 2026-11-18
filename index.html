@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STEM Assessment System - Interactive quizzes with JSON question banks, MCQ/numeric support, and progress tracking.">
+    <title>STEM Assessment System</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="/" class="site-logo" aria-label="STEM Assessment System Home">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                <span class="logo-text">STEM Assessment System</span>
+            </a>
+            <nav class="site-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#question-types" class="nav-link">Question Types</a></li>
+                    <li><a href="#progress" class="nav-link">Progress Tracking</a></li>
+                    <li><a href="#docs" class="nav-link">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="search-toggle" role="search" aria-label="Search documentation">
+                <input type="search" id="search-input" placeholder="Search docs..." aria-label="Search" autocomplete="off">
+                <div id="search-results" class="search-results" role="listbox" aria-label="Search results" hidden></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title">STEM Assessment System</h1>
+                <p class="hero-subtitle">Interactive quizzes with JSON question banks, MCQ/numeric support, per-learner progress files, and 5+ pytest cases.</p>
+                <div class="hero-stats" role="list" aria-label="Platform statistics">
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">JSON</span>
+                        <span class="stat-label">Question Banks</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">MCQ + Numeric</span>
+                        <span class="stat-label">Question Types</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Pytest Cases</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="tools-section" aria-labelledby="features-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="features-title">Key Features</h2>
+                    <p class="section-description">Comprehensive assessment tools for STEM education</p>
+                </header>
+                <div class="tools-grid" role="list" aria-label="Key features">
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 0;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">JSON Question Banks</h3>
+                        <p class="tool-description">Structured question banks with metadata, categories, difficulty levels, and explanations.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Categories</li>
+                            <li>Difficulty Levels</li>
+                            <li>Explanations</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Schema <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 1;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">MCQ & Numeric Questions</h3>
+                        <p class="tool-description">Support for multiple choice questions with single/multiple correct answers and numeric questions with tolerance ranges.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Single Choice</li>
+                            <li>Multiple Choice</li>
+                            <li>Numeric Input</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Types <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 2;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Progress Tracking</h3>
+                        <p class="tool-description">Per-learner progress files with scores, time spent, attempts, and mastery indicators across topics.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Score History</li>
+                            <li>Mastery Tracking</li>
+                            <li>Time Analytics</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Progress <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 3;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Quiz Runner</h3>
+                        <p class="tool-description">Interactive CLI quiz runner with timed sessions, randomized question order, and immediate feedback.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Timed Sessions</li>
+                            <li>Randomized Order</li>
+                            <li>Instant Feedback</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Runner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 4;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Export & Reports</h3>
+                        <p class="tool-description">Generate detailed reports, export to CSV/JSON, and track improvement over time.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>CSV/JSON Export</li>
+                            <li>Detailed Reports</li>
+                            <li>Trend Analysis</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Export <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="tool-card reveal" role="listitem" style="--card-index: 5;">
+                        <div class="tool-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="tool-title">Comprehensive Tests</h3>
+                        <p class="tool-description">5+ pytest cases covering question parsing, scoring logic, progress persistence, edge cases, and numeric tolerance.
+                        </p>
+                        <ul class="tool-tags" role="list">
+                            <li>Parsing Tests</li>
+                            <li>Scoring Tests</li>
+                            <li>Edge Cases</li>
+                        </ul>
+                        <a href="https://github.com/myzticalbabe/stem-assessment-system" class="tool-link" target="_blank" rel="noopener noreferrer">
+                            View Tests <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="question-types" class="learning-paths-section" aria-labelledby="question-types-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="question-types-title">Question Types</h2>
+                    <p class="section-description">Supported question formats with examples</p>
+                </header>
+                <div class="paths-grid" role="list" aria-label="Question types">
+                    <article class="path-card reveal" role="listitem" style="--card-index: 0;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Single Choice</span>
+                                <span class="path-duration">MCQ</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Multiple Choice (Single Answer)</h3>
+                        <p class="path-description">Traditional multiple choice with one correct answer. Supports shuffle options and explanation display.
+                        </p>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{ "type": "mcq_single",
+  "question": "What is the time complexity of binary search?",
+  "options": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+  "correct": 1,
+  "explanation": "Binary search divides the search space in half each iteration, giving O(log n).",
+  "category": "algorithms",
+  "difficulty": "easy" }</code></pre>
+                        <div class="path-tools">
+                            <span class="path-tool">Shuffle Options</span>
+                            <span class="path-tool">Explanations</span>
+                        </div>
+                    </article>
+
+                    <article class="path-card reveal" role="listitem" style="--card-index: 1;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Multi Choice</span>
+                                <span class="path-duration">MCQ</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Multiple Choice (Multiple Answers)</h3>
+                        <p class="path-description">Select all that apply. Partial credit scoring supported with configurable penalties.
+                        </p>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{ "type": "mcq_multiple",
+  "question": "Which are valid Python data types?",
+  "options": ["list", "tuple", "array", "set"],
+  "correct": [0, 1, 3],
+  "explanation": "list, tuple, and set are built-in. array requires import from array module.",
+  "category": "python",
+  "difficulty": "medium" }</code></pre>
+                        <div class="path-tools">
+                            <span class="path-tool">Partial Credit</span>
+                            <span class="path-tool">Configurable Penalties</span>
+                        </div>
+                    </article>
+
+                    <article class="path-card reveal" role="listitem" style="--card-index: 2;">
+                        <div class="path-header">
+                            <div class="path-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="path-meta">
+                                <span class="path-level">Numeric Input</span>
+                                <span class="path-duration">Calculation</span>
+                            </div>
+                        </div>
+                        <h3 class="path-title">Numeric Questions</h3>
+                        <p class="path-description">Free-form numeric answers with configurable tolerance (absolute or relative). Supports scientific notation.
+                        </p>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{ "type": "numeric",
+  "question": "Calculate the derivative of x³ at x=2",
+  "answer": 12,
+  "tolerance": 0.001,
+  "tolerance_type": "absolute",
+  "explanation": "d/dx(x³) = 3x². At x=2: 3×4 = 12.",
+  "category": "calculus",
+  "difficulty": "medium" }</code></pre>
+                        <div class="path-tools">
+                            <span class="path-tool">Absolute/Relative</span>
+                            <span class="path-tool">Scientific Notation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress" class="about-section" aria-labelledby="progress-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="progress-title">Progress Tracking & Example Data</h2>
+                    <p class="section-description">Per-learner progress tracking with mastery indicators</p>
+                </header>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <h3>Question Bank Schema</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{
+  "version": "1.0",
+  "metadata": {
+    "title": "Python Fundamentals Assessment",
+    "author": "STEM Education Team",
+    "created": "2026-11-18",
+    "version": "1.0"
+  },
+  "categories": ["basics", "control_flow", "functions", "data_structures"],
+  "difficulties": ["easy", "medium", "hard"],
+  "questions": [
+    {
+      "id": "q001",
+      "type": "mcq_single",
+      "question": "What is the output of print(2 ** 3)?",
+      "options": ["6", "8", "9", "5"],
+      "correct": 1,
+      "category": "basics",
+      "difficulty": "easy",
+      "explanation": "2 ** 3 = 2 × 2 × 2 = 8"
+    }
+  ]
+}</code></pre>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Learner Progress File</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{
+  "learner_id": "learner_001",
+  "created": "2026-11-18T10:00:00Z",
+  "last_updated": "2026-11-18T15:30:00Z",
+  "sessions": [
+    {
+      "session_id": "sess_001",
+      "date": "2026-11-18",
+      "questions_attempted": 10,
+      "correct": 8,
+      "score": 0.8,
+      "time_spent_seconds": 420,
+      "categories": {
+        "basics": {"attempted": 4, "correct": 4},
+        "control_flow": {"attempted": 3, "correct": 2},
+        "functions": {"attempted": 3, "correct": 2}
+      }
+    }
+  ],
+  "mastery": {
+    "basics": 1.0,
+    "control_flow": 0.67,
+    "functions": 0.67,
+    "data_structures": 0.0
+  },
+  "streak_days": 3,
+  "total_time_seconds": 1250
+}</code></pre>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Quiz Session Export</h3>
+                        <pre style="background: var(--color-bg-elevated); padding: var(--space-4); border-radius: var(--radius-md); overflow-x: auto; font-size: var(--fs-xs); line-height: var(--lh-normal);"><code>{
+  "session_id": "sess_001",
+  "learner_id": "learner_001",
+  "quiz_id": "python_fundamentals",
+  "started": "2026-11-18T10:00:00Z",
+  "completed": "2026-11-18T10:07:00Z",
+  "questions": [
+    {"id": "q001", "answer": 1, "correct": true, "time_seconds": 15},
+    {"id": "q002", "answer": 0, "correct": false, "time_seconds": 22}
+  ],
+  "summary": {
+    "total": 10,
+    "correct": 8,
+    "score": 0.8,
+    "avg_time_per_question": 42
+  }
+}</code></pre>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="about-section" aria-labelledby="docs-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="docs-title">Documentation & Links</h2>
+                </header>
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <h3>Quick Start</h3>
+                        <p><code>pip install stem-assessment-system</code></p>
+                        <p><code>stem-assess create-bank --title "Python Basics"</code></p>
+                        <p><code>stem-assess run --bank python_basics.json</code></p>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Resources</h3>
+                        <ul style="text-align: left; padding-left: var(--space-6);">
+                            <li><a href="https://github.com/myzticalbabe/stem-assessment-system">GitHub Repository</a></li>
+                            <li><a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a></li>
+                            <li><a href="https://github.com/myzticalbabe/babel/blob/main/STEM.md">STEM Standards</a></li>
+                        </ul>
+                    </article>
+                    <article class="about-card reveal">
+                        <h3>Testing</h3>
+                        <p><code>pytest tests/ -v</code></p>
+                        <p>5+ test cases covering question parsing, scoring logic, progress persistence, edge cases, and numeric tolerance handling.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 STEM Assessment System. Part of the <a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a>.</p>
+            <nav aria-label="Footer links">
+                <ul>
+                    <li><a href="https://github.com/myzticalbabe/babel">BaBeL Canon</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/LICENSE">Soul Forge License</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/STEM.md">STEM Standards</a></li>
+                    <li><a href="https://github.com/myzticalbabe/babel/blob/main/ACCESSIBILITY.md">Accessibility Mandate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="/assets/js/search.js"></script>
+</body>
+</html>
