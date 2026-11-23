@@ -1,0 +1,10 @@
+{
+  "title": "Functions and Parameters",
+  "questions": [
+    {"id": "q1", "type": "mcq", "prompt": "Which keyword defines a function?", "options": ["func", "def", "function", "define"], "answer": "def"},
+    {"id": "q2", "type": "mcq", "prompt": "What does return do?", "options": ["Prints to console", "Sends value to caller", "Stops program", "Creates variable"], "answer": "Sends value to caller"},
+    {"id": "q3", "type": "mcq", "prompt": "What is a default parameter?", "options": ["Required argument", "Optional argument with preset value", "Global variable", "Type hint"], "answer": "Optional argument with preset value"},
+    {"id": "q4", "type": "mcq", "prompt": "What is the scope of a variable defined inside a function?", "options": ["Global", "Local", "Module", "Class"], "answer": "Local"},
+    {"id": "q5", "type": "mcq", "prompt": "What does a docstring do?", "options": ["Executes code", "Documents the function", "Returns a value", "Imports a module"], "answer": "Documents the function"}
+  ]
+}

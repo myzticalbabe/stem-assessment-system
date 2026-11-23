@@ -1,0 +1,10 @@
+{
+  "title": "Loops and Iteration",
+  "questions": [
+    {"id": "q1", "type": "mcq", "prompt": "What does range(3) produce?", "options": ["[1,2,3]", "[0,1,2]", "[0,1,2,3]", "[1,2]"], "answer": "[0,1,2]"},
+    {"id": "q2", "type": "mcq", "prompt": "What is the output of: for i in range(2, 5): print(i)?", "options": ["2 3 4", "2 3 4 5", "3 4 5", "2 3"], "answer": "2 3 4"},
+    {"id": "q3", "type": "mcq", "prompt": "When does a while loop terminate?", "options": ["When condition is True", "When condition is False", "After 10 iterations", "Never"], "answer": "When condition is False"},
+    {"id": "q4", "type": "numeric", "prompt": "What is the sum of range(1, 11)?", "answer": 55, "tolerance": 0},
+    {"id": "q5", "type": "mcq", "prompt": "What does 'break' do in a loop?", "options": ["Skips current iteration", "Exits the loop", "Restarts the loop", "Pauses execution"], "answer": "Exits the loop"}
+  ]
+}

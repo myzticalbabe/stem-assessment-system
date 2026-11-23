@@ -1,0 +1,10 @@
+{
+  "title": "Python Basics",
+  "questions": [
+    {"id": "q1", "type": "mcq", "prompt": "What is the output of print(2 + 3 * 4)?", "options": ["20", "14", "24", "10"], "answer": "14"},
+    {"id": "q2", "type": "mcq", "prompt": "Which data type is 'hello'?", "options": ["int", "float", "str", "bool"], "answer": "str"},
+    {"id": "q3", "type": "numeric", "prompt": "What is 100 / 3 rounded to 2 decimals?", "answer": 33.33, "tolerance": 0.01},
+    {"id": "q4", "type": "mcq", "prompt": "What does len('abc') return?", "options": ["2", "3", "4", "Error"], "answer": "3"},
+    {"id": "q5", "type": "mcq", "prompt": "Which is a valid variable name?", "options": ["2name", "my-var", "my_var", "class"], "answer": "my_var"}
+  ]
+}
