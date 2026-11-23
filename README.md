@@ -13,3 +13,5 @@ python -m assessment.cli --quiz data/sample_quiz.json --learner Carol --answers 
 ```bash
 pytest
 ```
+
+SOUL LICENCE ONLY — see `LICENSE` (`LicenseRef-SoulForge-1.0`).
